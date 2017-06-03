@@ -699,7 +699,7 @@ namespace Microsoft.EntityFrameworkCore.Scaffolding.Internal
                     break;
 
                 default:
-                    foreignKey.DeleteBehavior = DeleteBehavior.Restrict;
+                    foreignKey.DeleteBehavior = DeleteBehavior.ClientSetNull;
                     break;
             }
         }
